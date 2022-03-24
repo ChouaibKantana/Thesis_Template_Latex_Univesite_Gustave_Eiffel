@@ -1,0 +1,66 @@
+\chapter{Title of Chapter 2}
+
+\section{Introduction}
+
+Text of introduction
+
+\section{Section}
+
+For complex equations, we can define an example of mathematical equation in \eqref{MDDRV}:
+\begin{equation}
+	\label{MDDRV}
+	\begin{split}
+		y(n)=&\sum_{k=0}^{\frac{K-1}{2}}\sum_{i=0}^{M}a_{2k+1,1}|x(n)|^{2k}x(n-i)\\
+		&+\sum_{k=1}^{\frac{K-1}{2}}\sum_{i=1}^{M}a_{2k+1,2}|x(n)|^{2(k-1)}x^2(n)x^*(n-i)\\
+		&+\sum_{k=1}^{\frac{K-1}{2}}\sum_{i=1}^{M}a_{2k+1,3}|x(n)|^{2(k-1)}x(n)|x(n-i)|^2\\
+		&+\sum_{k=1}^{\frac{K-1}{2}}\sum_{i=1}^{M}a_{2k+1,4}|x(n)|^{2(k-1)}x^*(n)x^2(n-i)\\
+		&+\sum_{k=1}^{\frac{K-1}{2}}\sum_{i=1}^{M}b_{2k+1}|x(n-i)|^{2k}x(n-i)
+	\end{split}
+\end{equation}
+
+The matrix of a given model can be represented as:
+\begin{equation}
+	\small
+	\textbf{Z}=\left[
+	\begin{array}{llllll}
+		\Phi_{1,1}(z(n)) & \dots & \Phi_{K,1}(z(n)) & \Phi_{1,2}(z(n)) & \cdots & \Phi_{K,L}(z(n)) \\
+		\Phi_{1,1}(z(n-1)) & \vdots & \ddots &  & \vdots & \Phi_{K,L}(z(n-1)) \\
+		\vdots & \vdots &  &  &  & \vdots \\
+		\Phi_{1,1}(z(n-N+1)) & \cdots &  &  &  & \Phi_{K,L}(z(n-N+1)) \\ %z(n-N-L+2)|z(n-N-L+2)|^{K-1}
+	\end{array}
+	\right]
+\end{equation}
+where $\Phi_{k,l}(z(n))=z(n-l+1)|z(n-l+1)|^{k-1}$.
+
+Table \ref{TabTest1} presents an example of tables
+
+\newpage
+
+\begin{table}[!h]
+	\centering
+	\caption{Comparison}
+	%\begin{adjustbox}{width=\columnwidth,center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Model } & \multirow{2}{*}{\textbf{Parameters}} & \textbf{Number} \\
+		\textbf{for Comparison} &  & \textbf{of parameters} \\
+		\hline
+		\hline
+		\multirow{2}{*}{Model 1} & $A$: parameter 1 & \multirow{2}{*}{$ A+B $}\\
+		& $B$: parameter 2 & \\
+		\hline
+		\multirow{2}{*}{Model 2} & $A$: parameter 1 & \multirow{2}{*}{$A+B$}\\
+		& $B$: parameter 2 & \\
+		\hline
+	\end{tabular}
+	\label{TabTest1}
+	%\end{adjustbox}
+\end{table}
+
+For large tables, you have to use the package \textit{adjustbox} to re-size the table according to the width of the document.	
+
+\section{Conclusion}
+
+This chapter introduces the principle of ...
+
+For that purpose, the following chapter will focus on ...

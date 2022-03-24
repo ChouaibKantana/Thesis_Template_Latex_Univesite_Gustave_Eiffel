@@ -1,0 +1,88 @@
+\chapter{Optimization and Sizing of DVR Model} 
+
+\section{Introduction}
+
+Text of introduction ...
+
+\section{Section 1}
+
+An example of Algorithm of a given mathematical behavior of $f(x_1)$ and $f(x_2)$ is illustrated in Algorithm \eqref{Algo}.
+
+\begin{algorithm}[!h]
+	\caption{Algorithm of test}
+	$q=0$ ; $a_0=a$ ; $b_0=b$ \\
+	Compute $x_1$ and $x_2$ \\
+	\While{$|b_q-a_q|>\epsilon$}{
+		Compute $f(x_1)$ and $f(x_2)$ \\
+		\If{$f(x_1)\leq f(x_2)$}{
+			$a_{q+1}=a_q$ \\
+			$b_{q+1}=x_2$ \\
+			$x_2=x_1$ \\
+			Compute $x_1$  \\
+		}
+		$q=q+1$
+	}
+	$x_{opt}=\frac{a_{q}+b_{q}}{2}$
+	\label{Algo}
+\end{algorithm}
+
+Table \ref{TabTest2} present an example of complex tables.
+
+\newpage
+
+\begin{table*}[!h]
+	\centering
+	\caption{Comparison of criterion 1, 2, and 3}
+	%\begin{adjustbox}{width=\columnwidth,center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\cline{3-5}
+			\multicolumn{2}{c|}{}  & Uniform & \multicolumn{2}{|c|}{Random} \\
+			\multicolumn{2}{c|}{}  & Test &  \multicolumn{2}{|c|}{Test} \\
+			\cline{4-5}
+			\multicolumn{2}{c|}{}  & & Best case & Worst case \\
+			\hline
+			\multicolumn{2}{|c|}{Results} & \multirow{2}{*}{$[1.11~2.22~3.33]$}  & \multirow{2}{*}{$[1.11~2.22~3.33]$} & \multirow{2}{*}{$[1.11~2.22~3.33]$} \\
+			\multicolumn{2}{|c|}{before optimization} &  &  & \\
+			\hline
+			\multicolumn{2}{|c|}{Index 1} & 14.98 & 38.68 & 12.09 \\
+			\hline
+			\multicolumn{5}{|c|}{\textbf{Application of our approach}}  \\
+			\hline
+			\multicolumn{2}{|c|}{Optimization of} & \multirow{2}{*}{$[1.11~2.22~3.33]$} & \multirow{2}{*}{$[1.11~2.22~3.33]$} & \multirow{2}{*}{$[1.11~2.22~3.33]$}\\
+			\multicolumn{2}{|c|}{Results} & & & \\
+			\hline
+			\multicolumn{2}{|c|}{Index 1}  & 20.76 & 45.09 & 23.98 \\
+			\hline
+			\cline{2-5}
+			\multicolumn{1}{|c|}{\multirow{2}{*}{Index 2} }& Left & 18.49 & 18.49 & 18.49\\
+			\cline{2-5}
+			& Right & 18.82 & 19.82 & 19.82\\
+			\cline{2-5}
+			\hline
+			\multicolumn{1}{|c|}{\multirow{3}{*}{Index 3} } & Left & 4 & 1 & 2 \\
+			\cline{2-5}
+			& Center & 2 & 3 & 5 \\
+			\cline{2-5}
+			& Right & 3 & 1 & 2\\
+			\hline
+		\end{tabular}
+		\label{TabTest2}
+	%\end{adjustbox}
+\end{table*}
+
+\section{Section 2} % \label{SectionHC} % You can add a label to reference this section
+
+\subsection{Sub-Section 1}
+
+\subsubsection{Sub Sub-Section 1}
+
+\paragraph{Paragraph} \mbox{}\\
+
+\subparagraph{Sub-Paragraph} \mbox{}\\
+
+You can enumerate the sub paragraph by changing the number in used to set counter in \textit{setcounter\{secnumdepth\}\{5\}}
+
+
+\section{Conclusion}
+
+In this chapter, X are discussed and investigated ...
